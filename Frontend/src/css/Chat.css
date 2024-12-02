@@ -1,0 +1,86 @@
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: #E0F2FE;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+    border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: #1E3A8A;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.chat-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 88vh;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1E3A8A;
+}
+
+.chat-history {
+    overflow-y: auto;
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 10px;
+    scrollbar-width: thin;
+}
+
+.welcome-message {
+    background-color: #3B82F6;
+    color: #fff;
+}
+
+.chatcard {
+    padding: 20px;
+    background-color: #2563EB;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-area {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1E40AF;
+    color: white;
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(to right, #3B82F6, #1E3A8A);
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, #60A5FA, #2563EB);
+}

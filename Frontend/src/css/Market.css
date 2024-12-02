@@ -1,0 +1,56 @@
+.market {
+    color: white;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align the content to the right */
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #0d1a33; /* Dark blue background */
+    gap: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    min-height: 100vh; /* Ensure it spans the full height of the viewport */
+}
+
+.table {
+    width: 80%; /* Adjust width */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #11264d; /* Darker blue for the table background */
+    border: 1px solid #334f7d; /* Medium blue for the border */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    color: #cdd9f0; /* Light blue for text */
+    background-color: #11264d; /* Matching the table background */
+}
+
+.table th {
+    color: #86a4d8; /* Softer blue for headers */
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1a3b6c; /* Medium blue for striped rows */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #2a598c; /* Brighter blue for hover effect */
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(18, 18, 18, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(18, 18, 18, 0.7);
+}
